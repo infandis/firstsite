@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GO-GO</title>
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="logo"> <!-- Кликабельный логотип -->
+                    <h1 class="logo__title">
+                        <a class="logo__link" href="#">
+                            <img class="logo__picture" src="img/logo.png" alt="logo">
+                            <span class="logo__text">GO-GO</span>
+                        </a>
+                    </h1> 
+                </div>
+                <ul class="menu"> <!-- Верхушка с меню -->
+                    <li class="menu__item">
+                        <a href="pages/page.html" class="menu__link"> <!-- Ссылка на вторую страницу -->
+                            КРАЇНИ
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            ТУРИ
+                        </a>
+                    </li>
+                    <li class="menu__item"> 
+                        <a href="#footer" class="menu__link"> <!-- Якорь -->
+                            ДОПОМОГА З ТУРОМ
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link"> <!-- Выпадающая форма регистрации -->
+                            УВІЙТИ / ЗАРЕЄСТРУВАТИСЬ
+                        </a>
+                        <form action="https://fom.in.ua/echo" class="dropdown_form">
+                            <p class="dropdown_form__item">
+                                <input class= "dropdown_form__email" type="email" name="email" autofocus="autofocus" placeholder="user@domain.com" autocomplete="off" > 
+                            </p>
+                            <p class="dropdown_form__item"> 
+                                <input class="dropdown_form__password" type="password" name="password" placeholder="password"> 
+                            </p>
+                            <p class="dropdown_form__item">
+                                <input class="dropdown_form__submit" type="submit" value="Войти"> 
+                            </p>
+                        </form>
+                    </li>
+                </ul>
+            </header>
+            <main class="main">
+                <div class="search"> <!-- Контейнер поиска -->
+                    <form action="https://fom.in.ua/echo">
+                        <ul class="search__menu">
+                            <li class="search__item">
+                                ЗВІДКИ:
+                                <select name="select" class="search__input">
+                                    <option value="Kiyv">
+                                        Київ
+                                    </option>
+                                    <option value="Lviv">
+                                        Львів
+                                    </option>
+                                    <option value="Warsaw">
+                                        Варшава
+                                    </option>
+                                    <option value="Budapest">
+                                        Будапешт
+                                    </option> 
+                                </select>                              
+                            </li>
+                            <li class="search__item"> 
+                                КУДИ:
+                                <input type="text" name="text" class="search__input" value="" placeholder="Введіть країну чи місто">                                           
+                            </li>
+                            <li class="search__item">                           
+                                ДАТА ВИЛЬОТУ:
+                                <input type="date" name="date" class="search__input" min="2022-11-13" max="2023-07-30">                            
+                            </li>
+                            <li class="search__item">                     
+                                <input class="search__submit" type="submit" value="ШУКАТИ">
+                            </li>
+                        </ul>
+                    </form>                          
+                </div>
+                <div class="primary"> <!-- Сетка с горячими турами -->
+                    <h2 class="primary__title"> 
+                        Гарячі тури
+                    </h2>
+                    <div class="shop">
+                        <div class="shop__item">
+                            <header class="shop__header">
+                                <img src="img/grand_hotel.jpg" alt="egypt" class="shop__img">
+                            </header>
+                            <div class="shop__main">
+                                <a href="#" class="shop__title">
+                                    Grand Hotel, 4★ 
+                                </a>
+                                <p class="shop__description">
+                                    Єгипет, Хургада
+                                    <br>
+                                    Дати туру: з 16.11 по 23.11. Тривалість: 7 ночей в STANDARD ROOM (ROH)Xарчування: все включено. Переліт включений.
+                                </p>
+                            </div>
+                            <footer class="shop__footer">
+                                <a href="#" class="shop__buy">
+                                    Детальніше
+                                </a>
+                            </footer>
+                        </div>
+                        <div class="shop__item">
+                            <header class="shop__header">
+                                <img src="img/tailand.jpg" alt="tailand" class="shop__img">
+                            </header>
+                            <div class="shop__main">
+                                <a href="#" class="shop__title">
+                                    Cosy Beach Hotel, 3★
+                                </a>
+                                <p class="shop__description">
+                                    Таїланд (Таїланд), Паттайя
+                                    <br>
+                                    Дати туру: з 12.12 по 27.12. Тривалість: 15 ночей в Standard ROH.Xарчування: сніданок.Переліт включений. 
+                                </p>
+                            </div>
+                            <footer class="shop__footer">
+                                <a href="#" class="shop__buy">
+                                    Детальніше
+                                </a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </main> 
+            <div class="footer"> <!--Футер с формой, якорь -->
+                <p class="footer__title" id="footer">
+                    Хочете швидко підібрати тур? Наш експерт вам допоможе!
+                </p>
+                <form action="https://fom.in.ua/echo" class="footer__form">
+                    <input type="text" name="name" placeholder="Ваше ім'я" class="footer__input">
+                    <input type="tel" name="phone" placeholder="Номер телефону" class="footer__input" >
+                    <input type="submit" value="Залишити заявку" class="footer__input">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
